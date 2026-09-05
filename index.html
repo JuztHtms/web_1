@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rangga Putra — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="#top" class="logo">rangga<span class="dot">.</span>dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kontak" class="nav-cta">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-shape shape-a" aria-hidden="true"></div>
+    <div class="hero-shape shape-b" aria-hidden="true"></div>
+    <div class="hero-shape shape-c" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <p class="hero-badge">📍 Ponorogo, Indonesia — tersedia untuk proyek baru</p>
+      <h1 class="hero-title">
+        Halo, aku Rangga.<br>
+        Aku bikin website yang <span class="highlight-wrap">enak dipakai<svg class="highlight-underline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 15 C 60 5, 120 18, 150 10 C 200 2, 260 16, 298 8" stroke="#1B1B1F" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>.
+      </h1>
+      <p class="hero-sub">Front-end &amp; full-stack developer. Fokus di React, Node.js, dan detail kecil yang bikin sebuah produk terasa niat.</p>
+      <div class="hero-actions">
+        <a href="#proyek" class="btn btn-primary">Lihat proyek</a>
+        <a href="#kontak" class="btn btn-ghost">Ngobrol yuk</a>
+      </div>
+    </div>
+
+    <div class="hero-terminal" role="img" aria-label="Cuplikan kode bergaya terminal">
+      <div class="terminal-bar">
+        <span class="tdot td-1"></span><span class="tdot td-2"></span><span class="tdot td-3"></span>
+        <span class="terminal-label">tentang-rangga.js</span>
+      </div>
+      <pre class="terminal-body"><code><span class="tk-key">const</span> <span class="tk-var">rangga</span> = {
+  <span class="tk-prop">peran</span>: <span class="tk-str">"Web Developer"</span>,
+  <span class="tk-prop">suka</span>: [<span class="tk-str">"kopi"</span>, <span class="tk-str">"UI rapi"</span>, <span class="tk-str">"bug yang kepecahin"</span>],
+  <span class="tk-prop">sedangBelajar</span>: <span class="tk-str">"Go &amp; WebGL"</span><span class="cursor-blink">|</span>
+};</code></pre>
+    </div>
+  </section>
+
+  <section class="about" id="tentang">
+    <div class="about-photo">
+      <div class="photo-blob" aria-hidden="true"></div>
+      <div class="photo-tag">3+ tahun ngoding</div>
+    </div>
+    <div class="about-text">
+      <p class="eyebrow-plain">Tentang aku</p>
+      <h2>Ngulik web dari 2021, dan masih belum bosen.</h2>
+      <p>Awalnya iseng belajar HTML buat ubah tampilan blog pribadi, sekarang malah keterusan bikin aplikasi web buat klien dari berbagai kota. Aku suka proses dari wireframe kasar sampai jadi produk yang orang beneran pakai tiap hari.</p>
+      <p>Di luar layar, aku ngumpulin action figure jadul dan lagi belajar main gitar — pelan-pelan, seperti belajar framework baru.</p>
+      <div class="about-stats">
+        <div class="stat-chip chip-1"><strong>30+</strong><span>Proyek selesai</span></div>
+        <div class="stat-chip chip-2"><strong>12</strong><span>Klien puas</span></div>
+        <div class="stat-chip chip-3"><strong>∞</strong><span>Cangkir kopi</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skill">
+    <p class="eyebrow-plain center">Yang aku kuasai</p>
+    <h2 class="section-title center">Perkakas sehari-hari</h2>
+    <div class="skill-cloud">
+      <span class="skill-chip c1">React</span>
+      <span class="skill-chip c2">JavaScript</span>
+      <span class="skill-chip c3">Node.js</span>
+      <span class="skill-chip c4">HTML &amp; CSS</span>
+      <span class="skill-chip c1">Tailwind</span>
+      <span class="skill-chip c2">PostgreSQL</span>
+      <span class="skill-chip c3">Git &amp; GitHub</span>
+      <span class="skill-chip c4">Figma</span>
+      <span class="skill-chip c1">Express</span>
+      <span class="skill-chip c2">REST API</span>
+      <span class="skill-chip c3">Vite</span>
+      <span class="skill-chip c4">Docker (belajar)</span>
+    </div>
+  </section>
+
+  <section class="projects" id="proyek">
+    <p class="eyebrow-plain">Hasil kerja</p>
+    <h2 class="section-title">Beberapa proyek favoritku</h2>
+
+    <div class="project-grid">
+      <article class="project-card card-big" style="--card-bg:#FFC93C;">
+        <div class="card-top">
+          <span class="card-tag">Web App</span>
+          <span class="card-year">2025</span>
+        </div>
+        <h3>Warung.in</h3>
+        <p>Aplikasi kasir sederhana untuk warung kecil — catat penjualan, stok, dan laporan harian tanpa ribet.</p>
+        <div class="card-stack">
+          <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+        </div>
+        <a href="#" class="card-link">Lihat detail proyek</a>
+      </article>
+
+      <article class="project-card" style="--card-bg:#FF5D8F;">
+        <div class="card-top">
+          <span class="card-tag">Landing Page</span>
+          <span class="card-year">2024</span>
+        </div>
+        <h3>Kopi Senja</h3>
+        <p>Landing page untuk coffee shop lokal, lengkap dengan menu interaktif dan galeri foto.</p>
+        <div class="card-stack">
+          <span>HTML/CSS</span><span>JavaScript</span>
+        </div>
+        <a href="#" class="card-link">Lihat detail proyek</a>
+      </article>
+
+      <article class="project-card" style="--card-bg:#3EC1D3;">
+        <div class="card-top">
+          <span class="card-tag">Dashboard</span>
+          <span class="card-year">2024</span>
+        </div>
+        <h3>Panen Data</h3>
+        <p>Dashboard visualisasi data panen untuk kelompok tani, dengan grafik yang gampang dibaca.</p>
+        <div class="card-stack">
+          <span>React</span><span>Chart.js</span>
+        </div>
+        <a href="#" class="card-link">Lihat detail proyek</a>
+      </article>
+
+      <article class="project-card card-big" style="--card-bg:#7B61FF;">
+        <div class="card-top">
+          <span class="card-tag">Mobile Web</span>
+          <span class="card-year">2023</span>
+        </div>
+        <h3>Jadwal Kuliah</h3>
+        <p>Web app pengingat jadwal kuliah dengan notifikasi, dibuat waktu masih semester 4 — proyek pertama yang bikin aku jatuh cinta sama coding.</p>
+        <div class="card-stack">
+          <span>JavaScript</span><span>LocalStorage</span>
+        </div>
+        <a href="#" class="card-link">Lihat detail proyek</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="kontak">
+    <div class="contact-inner">
+      <p class="eyebrow-plain light">Kontak</p>
+      <h2 class="section-title light">Punya proyek di kepala? Ceritain aja.</h2>
+      <p class="contact-sub">Aku balas email biasanya dalam 1x24 jam. Kalau lebih suka chat santai, media sosial di bawah juga selalu kebuka.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama kamu" required>
+          <span class="field-error" id="nameError"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="kamu@email.com" required>
+          <span class="field-error" id="emailError"></span>
+        </div>
+        <div class="field">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Ceritakan proyekmu..." required></textarea>
+          <span class="field-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-wide">Kirim pesan</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+
+      <div class="social-row">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter/X</a>
+        <a href="mailto:rangga@contoh.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Dibuat dengan HTML, CSS &amp; JS oleh Rangga Putra © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
